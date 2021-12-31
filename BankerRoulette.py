@@ -7,4 +7,3 @@ print(f"{names[counter]} will pay the bill today")
 
 ##############you can use the choice function to select from a list ####################
 #print(f"{random.choice(names)} will pay the bill today")
-#####################################
