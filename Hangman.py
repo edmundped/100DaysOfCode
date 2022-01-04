@@ -1,9 +1,14 @@
 import random
 dictionary = open("hangman_wordlist.txt", "r")
-wordlist = dictionary. readlines()
+read_dictionary = dictionary. readlines()
+wordlist = []
 game_word = ""
-for word in wordlist:
-    if len(word) >= int(input("What should be the minimum length for words?:\n")):
-        game_word = random.choice(wordlist)
+len_of_gameword = int(input("What should be the minimum length for words?:\n"))
 
-print(game_word)
+for word in read_dictionary:
+    if len(word) >= len_of_gameword:
+        wordlist.append(word.replace("\n", ""))
+
+gameword = random.choice(wordlist)
+blanks = "_ "
+print(blanks * len_of_gameword)
