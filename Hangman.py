@@ -91,7 +91,7 @@ while not end_of_game:
             end_of_game = True
             print("You lose!")
 
-    print(f"".join(blanks))
+    print(f" ".join(blanks))
 
     if "_" not in blanks:
         end_of_game = True
